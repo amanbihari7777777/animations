@@ -23,7 +23,6 @@
       100% { background-position: 100% 50%; }
     }
 
-    /* Button container */
     .button-container {
       display: flex;
       gap: 20px;
@@ -33,7 +32,7 @@
 
     /* Stylish glowing 3D buttons */
     .btn {
-      position: relative;
+      display: inline-block;
       padding: 15px 30px;
       font-size: 18px;
       color: white;
@@ -41,7 +40,7 @@
       border: none;
       border-radius: 12px;
       cursor: pointer;
-      outline: none;
+      text-decoration: none;
       box-shadow: 0 8px 0 #222, 0 0 15px #ff0080, 0 0 30px #7928ca;
       transition: all 0.3s ease;
       animation: glowPulse 2s ease-in-out infinite alternate;
@@ -65,11 +64,11 @@
 </head>
 <body>
   <div class="button-container">
-    <button class="btn">Button 1</button>
-    <button class="btn">Button 2</button>
-    <button class="btn">Button 3</button>
-    <button class="btn">Button 4</button>
-    <button class="btn">Button 5</button>
+    <a href="index.html" class="btn">Index 1</a>
+    <a href="index2.html" class="btn">Index 2</a>
+    <a href="index3.html" class="btn">Index 3</a>
+    <a href="index4.html" class="btn">Index 4</a>
+    <a href="index5.html" class="btn">Index 5</a>
   </div>
 </body>
 </html>
