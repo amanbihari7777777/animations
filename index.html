@@ -8,9 +8,10 @@
     /* Rainbow background animation */
     body {
       margin: 0;
+      padding: 0;
       height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
       background-size: 1400% 1400%;
@@ -23,24 +24,32 @@
       100% { background-position: 100% 50%; }
     }
 
+    h1 {
+      margin-top: 40px;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      font-size: 48px;
+    }
+
     .button-container {
       display: flex;
+      flex-direction: column;
       gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
+      margin-top: 50px;
     }
 
     /* Stylish glowing 3D buttons */
     .btn {
       display: inline-block;
-      padding: 15px 30px;
-      font-size: 18px;
+      padding: 15px 40px;
+      font-size: 20px;
       color: white;
       background: linear-gradient(45deg, #ff0080, #7928ca);
       border: none;
       border-radius: 12px;
       cursor: pointer;
       text-decoration: none;
+      text-align: center;
       box-shadow: 0 8px 0 #222, 0 0 15px #ff0080, 0 0 30px #7928ca;
       transition: all 0.3s ease;
       animation: glowPulse 2s ease-in-out infinite alternate;
@@ -63,6 +72,8 @@
   </style>
 </head>
 <body>
+  <h1>Animations</h1>
+
   <div class="button-container">
     <a href="index.html" class="btn">Index 1</a>
     <a href="index2.html" class="btn">Index 2</a>
